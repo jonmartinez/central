@@ -1,8 +1,56 @@
 <html>
 	<head>
-    	<title>titulo</title>
+    	<title>Calculadora</title>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
-    	<h1>Prueba 2</h1>
-    </body>
+    
+    <body style="text-align:center">
+    	<h1>Calculadora </h1>
+        <form name="frm">
+            <div id="calculadora">
+              <table width="auto" border="1" align="center">
+                <tr>
+                  <td colspan=2><center><input type="text" name="info" value="0" size="40" maxlength="39" style="font-size:12px; text-align:right;" class="textbox" disabled></center></td>
+                </tr>
+                <tr>
+                  <td align="center">
+	                  <input type="button" name="1" value="1" class="numero">
+                      <input type="button" name="2" value="2" class="numero">
+                      <input type="button" name="3" value="3" class="numero">
+                      <input type="button" name="4" value="4" class="numero">
+					  <input type="button" name="5" value="5" class="numero">                  
+                  </td>
+                  <td align="center">
+   	                  <input type="button" name="6" value="6" class="numero">
+                      <input type="button" name="7" value="7" class="numero">
+                      <input type="button" name="8" value="8" class="numero">
+                      <input type="button" name="9" value="9" class="numero">
+                      <input type="button" name="0" value="0" class="numero">                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+	                  <input type="button" name="suma" value="+">
+                      <input type="button" name="resta" value="-">
+                      <input type="button" name="multiplicacion" value="X">
+                  </td>
+                  <td align="center">
+	                  <input type="button" name="division" value="/">
+                      <input type="button" name="raizcuadrada" value="Raiz">
+                      <input type="button" name="potencia2" value="Potencia 2">                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+	                  	 <input type="button" name="sen" value="Sen X">
+    	                 <input type="button" name="cos" value="Cos X">
+                  </td>
+                  <td align="center">
+	                  	 <input type="button" name="tan" value="Sen X" class="button">
+    	                 <input type="button" name="igual" value="=">
+                  </td>
+                </tr>
+              </table>
+        	</div>
+    	</form>
+    <p>&nbsp;</p>
+</body>
 </html>
