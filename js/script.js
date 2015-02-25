@@ -27,6 +27,27 @@ function btn (tecla)
 			var resultado = eval(pantalla.value);
 			pantalla.value = resultado;
 		break;
+		case 'R':
+			var resultado = "Math.sqrt("+pantalla.value+")";
+			pantalla.value=resultado;
+		break;
+		case 'R3':
+			var resultado = "Math.cbrt("+pantalla.value+")";
+			pantalla.value=resultado;
+		break;
+		
+		case 'P':
+			var resultado = "Math.pow("+pantalla.value+","+3+")";
+			pantalla.value=resultado;
+		break;
+		case 'Sen':
+			var resultado = "Math.sin("+pantalla.value+")";
+			pantalla.value=resultado;
+		break;
+		case 'Cos':
+			var resultado = "Math.cos("+pantalla.value+")";
+			pantalla.value=resultado;
+		break;
 		default:
 			pantalla.value= pantalla.value + tecla;
 		break;
