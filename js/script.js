@@ -18,18 +18,17 @@ function pulsada (tecla)
 
 function btn (tecla) 
 {
-	var listaNodosPantalla = document.getElementsByClassName('pantalla');
-	var nodoTextoPantalla = listaNodosPantalla[0].firstChild;
+	var pantalla = document.getElementsById('pantalla');
 	switch(tecla) {
 		case 'C':
-		nodoTextoPantalla.nodeValue = ' ';
+		pantalla.value= ' ';
 		break;
 		case '=':
-		var resultado = eval(nodoTextoPantalla.nodeValue);
-		nodoTextoPantalla.nodeValue = resultado;
+		var resultado = eval(pantalla.value);
+		pantalla.value = resultado;
 		break;
 		default:
-		nodoTextoPantalla.nodeValue = nodoTextoPantalla.nodeValue + tecla;
+		pantalla.value= pantalla.value + tecla;
 		break;
 	}
 }

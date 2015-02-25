@@ -9,44 +9,43 @@
     	<h1>Calculadora </h1>
         <form name="frm">
             <div id="calculadora">
-              <table width="auto" border="1" align="center">
+              <table width="800px" border="1" align="center">
                 <tr>
-                  <td colspan=2><center><input type="text" class="pantalla" name="info" value="0" size="40" maxlength="39" style="font-size:12px; text-align:right;" id="textbox" disabled></center></td>
+                  <td colspan=2><center><input type="text" id="pantalla" name="info" value="0" size="40" maxlength="39" style="font-size:12px; text-align:right;" disabled></center></td>
                 </tr>
                 <tr>
                   <td align="center">
-	                  <input type="button" name="1" value="1" onClick="btn('1')" >
-                      <input type="button" name="2" value="2" pulsada('C')>
-                      <input type="button" name="3" value="3" id="numero">
-                      <input type="button" name="4" value="4" id="numero">
-					  <input type="button" name="5" value="5" id="numero">                  
+	                  <input type="button" name="1" value="1" onClick="btn('1')" id="numeros">
+                      <input type="button" name="2" value="2" onClick="btn('2')" id="numeros">
+                      <input type="button" name="3" value="3" onClick="btn('3')" id="numeros">
+                      <input type="button" name="4" value="4" onClick="btn('4')" id="numeros">
+					  <input type="button" name="5" value="5" onClick="btn('5')" id="numeros">                  
                   </td>
                   <td align="center">
-   	                  <input type="button" name="6" value="6" id="numero">
-                      <input type="button" name="7" value="7" id="numero">
-                      <input type="button" name="8" value="8" id="numero">
-                      <input type="button" name="9" value="9" id="numero">
-                      <input type="button" name="0" value="0" id="numero">                  </td>
+   	                  <input type="button" name="6" value="6" onClick="btn('6')" id="numeros">
+                      <input type="button" name="7" value="7" onClick="btn('7')" id="numeros">
+                      <input type="button" name="8" value="8" onClick="btn('8')" id="numeros">
+                      <input type="button" name="9" value="9" onClick="btn('9')" id="numeros">
+                      <input type="button" name="0" value="0" onClick="btn('0')" id="numeros">                  </td>
                 </tr>
                 <tr>
                   <td align="center">
-	                  <input type="button" name="suma" value="+">
-                      <input type="button" name="resta" value="-">
-                      <input type="button" name="multiplicacion" value="X">
+	                  <input type="button" name="suma" value="+" id="operaciones">
+                      <input type="button" name="resta" value="-" id="operaciones">
+                      <input type="button" name="multiplicacion" value="X" id="operaciones">
                   </td>
                   <td align="center">
-	                  <input type="button" name="division" value="/">
-                      <input type="button" name="raizcuadrada" value="Raiz">
-                      <input type="button" name="potencia2" value="Potencia 2">                  </td>
+	                  <input type="button" name="division" value="/" id="operaciones">
+                      <input type="button" name="raizcuadrada" value="Raiz" id="operaciones">
+                      <input type="button" name="potencia2" value="Potencia 2" id="operaciones">                  </td>
                 </tr>
                 <tr>
                   <td align="center">
-	                  	 <input type="button" name="sen" value="Sen X">
-    	                 <input type="button" name="cos" value="Cos X">
+	                  	 <input type="button" name="sen" value="Sen X" id="operaciones">
+    	                 <input type="button" name="cos" value="Cos X" id="operaciones">
                   </td>
                   <td align="center">
-	                  	 <input type="button" name="tan" value="Sen X" id="button">
-    	                 <input type="button" name="igual" value="=">
+    	                 <input type="button" name="igual" value="=" id="igual">
                   </td>
                 </tr>
               </table>
