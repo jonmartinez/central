@@ -8,48 +8,48 @@
     <body style="text-align:center">
     	<h1>Calculadora </h1>
         <form name="frm">
-            <div id="calculadora">
-              <table width="800px" border="1" align="center">
+               <table width="auto" border="0" align="center" style="background-color:#C6CCE8">
                 <tr>
-                  <td colspan=2><center><input type="text" id="pantalla" name="info" value="0" size="40" maxlength="39" style="font-size:12px; text-align:right;" disabled></center></td>
+                  <td colspan=2><center><input type="text" id="pantalla" size="40" maxlength="39" style="font-size:12px; text-align:right;" disabled></center></td>
                 </tr>
                 <tr>
                   <td align="center">
 	                  <input type="button" name="1" value="1" onClick="btn('1')" id="numeros">
                       <input type="button" name="2" value="2" onClick="btn('2')" id="numeros">
-                      <input type="button" name="3" value="3" onClick="btn('3')" id="numeros">
+                      <input type="button" name="3" value="3" onClick="btn('3')" id="numeros"><br>
                       <input type="button" name="4" value="4" onClick="btn('4')" id="numeros">
 					  <input type="button" name="5" value="5" onClick="btn('5')" id="numeros">                  
                   </td>
                   <td align="center">
    	                  <input type="button" name="6" value="6" onClick="btn('6')" id="numeros">
                       <input type="button" name="7" value="7" onClick="btn('7')" id="numeros">
-                      <input type="button" name="8" value="8" onClick="btn('8')" id="numeros">
+                      <input type="button" name="8" value="8" onClick="btn('8')" id="numeros"><br>
                       <input type="button" name="9" value="9" onClick="btn('9')" id="numeros">
                       <input type="button" name="0" value="0" onClick="btn('0')" id="numeros">                  </td>
                 </tr>
                 <tr>
                   <td align="center">
-	                  <input type="button" name="suma" value="+" id="operaciones">
-                      <input type="button" name="resta" value="-" id="operaciones">
-                      <input type="button" name="multiplicacion" value="X" id="operaciones">
+	                  <input type="button" name="suma" value="+" id="operaciones" onClick="btn('+')">
+                      <input type="button" name="resta" value="-" id="operaciones" onClick="btn('-')">
+                      <input type="button" name="multiplicacion" value="X" id="operaciones" onClick="btn('*')">
                   </td>
                   <td align="center">
-	                  <input type="button" name="division" value="/" id="operaciones">
-                      <input type="button" name="raizcuadrada" value="Raiz" id="operaciones">
-                      <input type="button" name="potencia2" value="Potencia 2" id="operaciones">                  </td>
+	                  <input type="button" name="division" value="/" id="operaciones" onClick="btn('/')">
+                      <input type="button" name="raizcuadrada" value="Raiz" id="operaciones" onClick="btn('raiz')">
+                      <input type="button" name="potencia2" value="Pot" id="operaciones" onClick="btn('Pot')">                  </td>
                 </tr>
                 <tr>
                   <td align="center">
-	                  	 <input type="button" name="sen" value="Sen X" id="operaciones">
-    	                 <input type="button" name="cos" value="Cos X" id="operaciones">
+	                  	 <input type="button" name="sen" value="Sen X" id="operaciones" onClick="btn('Sen')">
+    	                 <input type="button" name="cos" value="Cos X" id="operaciones" onClick="btn('Cos')">
                   </td>
                   <td align="center">
-    	                 <input type="button" name="igual" value="=" id="igual">
+    	                  <input id="C" type="button" onClick="btn('C')" value="C">
+                         <input type="button" name="igual" value="=" id="igual" onClick="btn('=')">
                   </td>
                 </tr>
               </table>
-        	</div>
+        	
     	</form>
     <p>&nbsp;</p>
 </body>
