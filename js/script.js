@@ -35,7 +35,10 @@ function btn (tecla)
 			var resultado = "Math.cbrt("+pantalla.value+")";
 			pantalla.value=resultado;
 		break;
-		
+		case 'e':
+			var resultado = "Math.exp("+pantalla.value+")";
+			pantalla.value=resultado;
+		break;
 		case 'P':
 			var resultado = "Math.pow("+pantalla.value+","+3+")";
 			pantalla.value=resultado;
