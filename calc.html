@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+		<meta charset="utf-8">
+		<link REL=StyleSheet href="css/style.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="calculadora">
+			<table border=0>
+				<tr>
+					<td>
+					   <input id="C" type="button" onclick="pulsada('C')" value="C">
+					</td>
+					<td colspan=3>
+					   <div class="pantalla"> </div> <!--Ojo tenemos un espacio para que exista nodeValue-->
+					</td>
+				</tr>
+				<tr>
+					<td><input id="numeros"  value=7 type="button" onclick="pulsada('7')"></td>
+					<td><input id="numeros"  value=8 onclick="pulsada('8')"></td>
+					<td><input id="numeros"  value=9 onclick="pulsada('9')"></td>
+					<td><input id="operaciones" type="button" onclick="pulsada('+')" value="+"></td>
+				</tr>	
+				<tr>
+				   <td><input id="numeros"  value=4 onclick="pulsada('4')"></td>
+				   <td><input id="numeros"  value=5 onclick="pulsada('5')"></td>
+				   <td><input id="numeros"  value=6 onclick="pulsada('6')"></td>
+				   <td><input id="operaciones"  value='-' onclick="pulsada('-')"></td>
+				</tr>	
+				<tr>
+				   <td><input id="numeros"  value=1 onclick="pulsada('1')"></td>
+				   <td><input id="numeros"  value=2 onclick="pulsada('2')"></td>
+				   <td><input id="numeros"  value=3 onclick="pulsada('3')"></td>
+				   <td><input id="operaciones"  value='/' onclick="pulsada('/')"></td>
+				</tr>	
+				<tr>
+				   <td><input id="numeros"  value=0 onclick="pulsada('0')"></td>
+				   <td><input id="numeros"  value='.' onclick="pulsada('.')"></td>
+				   <td><input id="igual"  value='=' onclick="pulsada('=')"></td>
+				   <td><input id="operaciones"  value='X' onclick="pulsada('*')"></td>				   
+				</tr>	
+			</table>				
+		</div>
+	</body>
+</html>

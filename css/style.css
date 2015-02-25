@@ -1,0 +1,119 @@
+body 
+{
+	font-family: sans-serif; text-align:center;
+}
+#calculadora 
+{ 
+	font: bold 14px Arial,sans-serif; 
+	background-color: #9DD2EA;  
+	border-radius: 3px; 
+	height: auto; 
+	margin: 0 auto;
+    padding: 20px 20px 9px; 
+	width: 285px;
+}
+/*------------------------------------------------*/
+#C
+{ 
+	background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+	background:-ms-linear-gradient(#fff 0%,#DEDEDE 100%); 
+	background:-o-linear-gradient(#fff 0%,#DEDEDE 100%); 
+	background:-webkit-linear-gradient(#fff 0%,#DEDEDE 100%);
+	background:linear-gradient(#fff 0%,#DEDEDE 100%);
+	border:solid 1px #DEDEDE;
+	border-radius:5px;
+	text-align:center;
+	padding:5px;
+	color:#f90;
+	width:75px; 
+	cursor: pointer;
+} 
+#numeros
+{ 
+	background:-moz-linear-gradient(#fc0 0%,#F8F8F8 100%); 
+	background:-ms-linear-gradient(#fc0 0%,#F8F8F8 100%);
+	background:-o-linear-gradient(#fc0 0%,#F8F8F8 100%); 
+	background:-webkit-linear-gradient(#fc0 0%,#F8F8F8 100%);
+	background:linear-gradient(#fc0 0%,#F8F8F8 100%);
+	border:solid 1px #DEDEDE; 
+	border-radius:5px;
+	text-align:center;
+	padding:5px; 
+	color:#000;
+	width:75px;
+	cursor: pointer;
+} 
+#numeros:hover
+{
+	background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+	color:#999; 
+	cursor: pointer;
+}
+
+#operaciones{ 
+	background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+	background:-ms-linear-gradient(#fff 0%,#DEDEDE 100%); 
+	background:-o-linear-gradient(#fff 0%,#DEDEDE 100%); 
+	background:-webkit-linear-gradient(#fff 0%,#DEDEDE 100%);
+	background:linear-gradient(#fff 0%,#DEDEDE 100%);
+	border:solid 1px #DEDEDE;
+	border-radius:5px;
+	text-align:center;
+	padding:5px;
+	color:#f90; 
+	width:50px; 
+	transition:all 1s;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s; 
+	-o-transition:all 1s;
+	-webkit-transition:all 1s;
+	cursor: pointer;
+}
+#operaciones:hover
+{ 
+	background:-moz-linear-gradient(#f90 0%,#F63 100%);
+	background:-ms-linear-gradient(#f90 0%,#F63 100%);
+	background:-o-linear-gradient(#f90 0%,#F63 100%);
+	background:-webkit-linear-gradient(#f90 0%,#F63 100%);
+	background:linear-gradient(#f90 0%,#F63 100%);
+	color:#fff;
+	padding:6px; 
+	width:53px;
+	font-size:18px; 
+	text-shadow:0 0 10px #FFF;
+	cursor: pointer;
+}
+
+#igual{ 
+	background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+	background:-ms-linear-gradient(#fff 0%,#DEDEDE 100%); 
+	background:-o-linear-gradient(#fff 0%,#DEDEDE 100%); 
+	background:-webkit-linear-gradient(#fff 0%,#DEDEDE 100%);
+	background:linear-gradient(#fff 0%,#DEDEDE 100%);
+	border:solid 1px #DEDEDE;
+	border-radius:5px;
+	text-align:center;
+	padding:5px;
+	color:#f90; 
+	width:75px; 
+	transition:all 1s;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s; 
+	-o-transition:all 1s;
+	-webkit-transition:all 1s;
+	cursor: pointer;
+}
+#igual:hover
+{ 
+	background:-moz-linear-gradient(#f90 0%,#F63 100%);
+	background:-ms-linear-gradient(#f90 0%,#F63 100%);
+	background:-o-linear-gradient(#f90 0%,#F63 100%);
+	background:-webkit-linear-gradient(#f90 0%,#F63 100%);
+	background:linear-gradient(#f90 0%,#F63 100%);
+	color:#fff;
+	padding:6px; 
+	width:75px;
+	font-size:18px; 
+	text-shadow:0 0 10px #FFF;
+	cursor: pointer;
+}
