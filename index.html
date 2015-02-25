@@ -1,7 +1,8 @@
 <html>
 	<head>
     	<title>Calculadora</title>
-        <link href="css/estilo.css" rel="stylesheet" type="text/css">
+        <link REL=StyleSheet href="css/style.css">
+		<script src="js/script.js"></script>
     </head>
     
     <body style="text-align:center">
@@ -10,22 +11,22 @@
             <div id="calculadora">
               <table width="auto" border="1" align="center">
                 <tr>
-                  <td colspan=2><center><input type="text" name="info" value="0" size="40" maxlength="39" style="font-size:12px; text-align:right;" class="textbox" disabled></center></td>
+                  <td colspan=2><center><input type="text" class="pantalla" name="info" value="0" size="40" maxlength="39" style="font-size:12px; text-align:right;" id="textbox" disabled></center></td>
                 </tr>
                 <tr>
                   <td align="center">
-	                  <input type="button" name="1" value="1" class="numero">
-                      <input type="button" name="2" value="2" class="numero">
-                      <input type="button" name="3" value="3" class="numero">
-                      <input type="button" name="4" value="4" class="numero">
-					  <input type="button" name="5" value="5" class="numero">                  
+	                  <input type="button" name="1" value="1" onClick="btn('1')" >
+                      <input type="button" name="2" value="2" pulsada('C')>
+                      <input type="button" name="3" value="3" id="numero">
+                      <input type="button" name="4" value="4" id="numero">
+					  <input type="button" name="5" value="5" id="numero">                  
                   </td>
                   <td align="center">
-   	                  <input type="button" name="6" value="6" class="numero">
-                      <input type="button" name="7" value="7" class="numero">
-                      <input type="button" name="8" value="8" class="numero">
-                      <input type="button" name="9" value="9" class="numero">
-                      <input type="button" name="0" value="0" class="numero">                  </td>
+   	                  <input type="button" name="6" value="6" id="numero">
+                      <input type="button" name="7" value="7" id="numero">
+                      <input type="button" name="8" value="8" id="numero">
+                      <input type="button" name="9" value="9" id="numero">
+                      <input type="button" name="0" value="0" id="numero">                  </td>
                 </tr>
                 <tr>
                   <td align="center">
@@ -44,7 +45,7 @@
     	                 <input type="button" name="cos" value="Cos X">
                   </td>
                   <td align="center">
-	                  	 <input type="button" name="tan" value="Sen X" class="button">
+	                  	 <input type="button" name="tan" value="Sen X" id="button">
     	                 <input type="button" name="igual" value="=">
                   </td>
                 </tr>
