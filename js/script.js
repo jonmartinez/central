@@ -26,7 +26,6 @@ function btn (tecla)
 		case '=':
 			var resultado = eval(pantalla.value);
 			pantalla.value = resultado;
-			dibujar();
 		break;
 		case 'R':
 			var resultado = "Math.sqrt("+pantalla.value+")";
@@ -52,18 +51,22 @@ function btn (tecla)
 			var resultado = "Math.cos("+pantalla.value+")";
 			pantalla.value=resultado;
 		break;
+		case 'Graf':
+			dibujarPlano();
+			//dibujarFuncion(canvas,contexto,pantalla);
+		break;
 		default:
 			pantalla.value= pantalla.value + tecla;
 		break;
 	}
 }
 
-function dibujar() 
+function dibujarPlano() 
 {
 	var canvas = document.getElementById('canvas');
-        var contexto = canvas.getContext('2d');
+	var contexto = canvas.getContext('2d');
+	contexto.translate(250,250);
 	contexto.lineWidth=2; //Defino el ancho de la linea en pixeles
-        contexto.translate(250,250);
 	contexto.strokeStyle = '#00A8FF'; //Defino el color en hexagesimal
 	//contexto.
  
@@ -78,12 +81,19 @@ function dibujar()
 	contexto.moveTo(0,250);// lo Ubico para iniciar el dibujo
 	contexto.lineTo(0,-250);// trazo la linea hasta este punto
 	contexto.stroke();// levanto el lapiz
-	contexto.closePath();// me alisto para realizar otra parte del dibujo
-        var x=-250;
-        contexto.strokeStyle = '#000'; //Defino el color en hexagesimal
-        contexto.beginPath();
-        contexto.lineTo(-250,-250*-1);
-        contexto.lineTo(250,250*-1);
-        contexto.stroke();
+	contexto.closePath();// me alisto para realizar otra parte del dibujo	
 	
+	var canvas = document.getElementById('canvas');
+	var contexto = canvas.getContext('2d');
+	var escala=250/(document.getElementById('txtEscala').value);
+	var x=-250;
+	contexto.strokeStyle = '#000'; //Defino el color en hexagesimal
+	contexto.beginPath();
+	for(i=x;i<(x*-1);i++)
+	{
+		contexto.lineTo(i*escala,Math.sin(i)*-escala);
+		//contexto.quadraticCurveTo(i*escala, Math.sin(i)*-escala, i+1*escala, Math.sin(i+1)*-escala);
+		//contexto.lineTo(i+1,Math.sin(i+1));
+		contexto.stroke();
+	}
 }
