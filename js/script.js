@@ -52,7 +52,7 @@ function btn (tecla)
 			pantalla.value=resultado;
 		break;
 		case 'Graf':
-			dibujarPlano();
+			dibujarPlano(pantalla);
 			//dibujarFuncion(canvas,contexto,pantalla);
 		break;
 		default:
@@ -61,7 +61,7 @@ function btn (tecla)
 	}
 }
 
-function dibujarPlano() 
+function dibujarPlano(pantalla) 
 {
 	var canvas = document.getElementById('canvas');
 	var contexto = canvas.getContext('2d');
@@ -86,14 +86,15 @@ function dibujarPlano()
 	var canvas = document.getElementById('canvas');
 	var contexto = canvas.getContext('2d');
 	var escala=250/(document.getElementById('txtEscala').value);
-	var x=-250;
+	var i = (document.getElementById('txtEscala').value)*(-1);
 	contexto.strokeStyle = '#000'; //Defino el color en hexagesimal
 	contexto.beginPath();
-	for(i=x;i<(x*-1);i++)
+	for(x=i;x<=(i*-1);x++)
 	{
-		contexto.lineTo(i*escala,Math.sin(i)*-escala);
+		//alert(x + "---" + y);
+		contexto.lineTo(x*escala,eval(pantalla.value)*(escala*-1));
 		//contexto.quadraticCurveTo(i*escala, Math.sin(i)*-escala, i+1*escala, Math.sin(i+1)*-escala);
 		//contexto.lineTo(i+1,Math.sin(i+1));
-		contexto.stroke();
 	}
+	contexto.stroke();
 }
