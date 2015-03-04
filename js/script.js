@@ -51,10 +51,10 @@ function btn (tecla)
 			var resultado = "Math.cos("+pantalla.value+")";
 			pantalla.value=resultado;
 		break;
-		case 'Graf':
-			dibujarPlano(pantalla);
-			//dibujarFuncion(canvas,contexto,pantalla);
-		break;
+			case 'Graf':
+				document.getElementById('tmp').innerHTML='<canvas id="canvas" width="500" height="500" style="background-color:#FFFFF1;">Su navegador no permite utilizar canvas.</canvas><br>';
+				dibujarPlano(pantalla);
+			break;
 		default:
 			pantalla.value= pantalla.value + tecla;
 		break;
@@ -66,9 +66,10 @@ function dibujarPlano(pantalla)
 	var canvas = document.getElementById('canvas');
 	var contexto = canvas.getContext('2d');
 	contexto.translate(250,250);
+	contexto.clearRect(-250, -250, canvas.width, canvas.height);
 	contexto.lineWidth=2; //Defino el ancho de la linea en pixeles
 	contexto.strokeStyle = '#00A8FF'; //Defino el color en hexagesimal
-	//contexto.
+//	contexto.restart();
  
 	//EJEX
 	contexto.beginPath(); // Pongo el lapiz
@@ -83,18 +84,16 @@ function dibujarPlano(pantalla)
 	contexto.stroke();// levanto el lapiz
 	contexto.closePath();// me alisto para realizar otra parte del dibujo	
 	
-	var canvas = document.getElementById('canvas');
-	var contexto = canvas.getContext('2d');
 	var escala=250/(document.getElementById('txtEscala').value);
 	var i = (document.getElementById('txtEscala').value)*(-1);
 	contexto.strokeStyle = '#000'; //Defino el color en hexagesimal
 	contexto.beginPath();
-	for(x=i;x<=(i*-1);x++)
+//	alert(pantalla.value);
+	for(x=i;x<=(i*-1);x+=0.2)
 	{
-		//alert(x + "---" + y);
 		contexto.lineTo(x*escala,eval(pantalla.value)*(escala*-1));
-		//contexto.quadraticCurveTo(i*escala, Math.sin(i)*-escala, i+1*escala, Math.sin(i+1)*-escala);
-		//contexto.lineTo(i+1,Math.sin(i+1));
+			contexto.stroke();
 	}
-	contexto.stroke();
+
+	contexto.translate(0,0);
 }
